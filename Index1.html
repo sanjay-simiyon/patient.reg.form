@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient registration form</title>
+    <link rel="stylesheet" href="./assets.boot/css/bootstrap.min.css">
+    <link rel="icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="bg-light">
+        
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="https://static.ambitionbox.com/alpha/company/photos/logos/vcare-india.jpg" alt="lazy" width="40px"> Vcare Hospital</a>
+              
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+     <section class="bg-hero"> 
+        <div class="container my-0">
+          <div class="row">
+            <div class="col-md-4 mt-5">
+              
+            
+            <img src="https://icons-for-free.com/iconfiles/png/512/message+one+comment+one+message+request+icon-1320184041562889001.png" alt="image" width="240">
+              <div class="jumbotron text-white">
+                <div class="container">
+                  <h2>Vcare For Your Care</h2>
+                  <P class="lead"><em> Hair transplant also done</em></P>
+                  <p class="lead"><em> We have thousands of great Doctors are their for your care</em></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" >
+              <div class="card mt-5">
+                <div class="card-header bg-success text-white" style="text-align: center;">
+                  <i class="fa fa-envelope mr-2 "></i>
+                  Patient registration form
+                </div>
+                <div class="card-body">
+                  <form action="" method="POST">
+                   
+                    <div class="form-group">
+                      <label for="name">Name <span class="text-danger">*</span></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender: <span class="text-danger">*</span></label>
+                      <div class="ml-2 form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          value="Male"
+                          id="gender"
+                          required
+                        />
+                        <label class="form-check-label" for="gender">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="female"
+                          value="Female"
+                        />
+                        <label class="form-check-label" for="female">Female</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="others"
+                          value="Others"
+                        />
+                        <label class="form-check-label" for="others">Others</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="mobile">Mobile no. <span class="text-danger">*</span></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="+91 9876543212"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Date of birth <span class="text-danger">*</span></label>
+                      <input
+                        type="date"
+                        name="Date"
+                        id="date"
+                        class="form-control"
+                        placeholder="date"
+                        aria-describedby="datehelp"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="source">City <span class="text-danger">*</span></label>
+                      <select
+                        name="source"
+                        id="source"
+                        class="form-control"
+                        required
+                      >
+                        <option value="">--Select City--</option>
+                        <option value="Google">Chennai</option>
+                        <option value="YouTube">Goa</option>
+                        <option value="By Mouth">Karnataka</option>
+                        <option value="YouTube">Mumbai</option>
+                        <option value="YouTube">Bangalore</option>
+                        <option value="YouTube">kerala</option>
+                        <option value="YouTube">Delhi</option>
+                        <option value="YouTube">Kashmir</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows="5"
+                        class="form-control"
+                        placeholder="Enter message briefly"
+                        
+                      ></textarea>
+                    </div>
+                   <!---- <label for="doctor">Doctor timings</label>
+                    <table class="table-col-sm table-bordered">
+                        <thead class="bg-danger">
+                          <tr>
+                            <th scope="col">Doctor</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-success">
+                            <th scope="row">Selvaraj</th>
+                            <td>9am to 3</td>
+                            <td>10am to 4</td>
+                            <td>NA</td>
+                            <td>6pm to 9pm</td>
+                            <td>10am to5pm</td>
+
+                          </tr>
+                          <tr class="bg-warning">
+                            <th scope="row">Bharathi.I</th>
+                            <td>9am to 3</td>
+                            <td>10am to 4</td>
+                            <td>9am to 5pm</td>
+                            <td>6pm to 9pm</td>
+                            <td>10am to5pm</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>--->
+                    <div class="form-group form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="termsAgreement"
+                        required
+                      />
+                      <label class="form-check-label" for="termsAgreement">
+                        I agree to terms and conditions.
+                      </label>
+                    </div>
+    
+                    <div class="form-group">
+                      <button class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+        <script src="./assets/js/jquery.min.js"></script>
+              <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"
+              ></script>
+              <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+</html>
